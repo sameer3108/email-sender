@@ -8,6 +8,7 @@ import os
 # Gmail credentials (use environment variables for safety)
 GMAIL_USER = os.getenv('GMAIL_USER')  # Your Gmail address
 GMAIL_PASSWORD = os.getenv('GMAIL_PASSWORD')  # App password for Gmail
+GMAIL_NAME = os.getenv('GMAIL_NAME')  # Your Name
 
 def send_email(sender_name, sender_email, recipient_name, recipient_email, company):
     try:
@@ -36,10 +37,10 @@ def send_email(sender_name, sender_email, recipient_name, recipient_email, compa
 
 def main():
     # Sender details
-    sender_name = "Dhairy Raval"
+    sender_name = GMAIL_NAME
     sender_email = GMAIL_USER
 
-    if not GMAIL_USER or not GMAIL_PASSWORD:
+    if not GMAIL_NAME or not GMAIL_USER or not GMAIL_PASSWORD:
         print("Please set your Gmail credentials as environment variables.")
         return
 
