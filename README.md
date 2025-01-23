@@ -4,3 +4,4 @@ Script to streamline cold outreach emails to recruiters, helping job seekers con
 ## Contributors
 - Sameer Mohamed (Developer)
 - Dhairy Raval (Developer)
+- Mehjabeen Reza (Developer)
